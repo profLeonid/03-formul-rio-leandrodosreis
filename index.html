@@ -6,15 +6,35 @@
     <title>Tela Login</title>
       <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-white flex items-center justify-center min-h-screen">
-    <div class="bg-red-500 w-80 p-8 text-center text-white rounded-sm shadow-lg">
-        <h1 class="text-3xl font-light mb-6">Criar Conta</h1>
+<body class="bg-red-500 min-h-screen flex flex-col items-center justify-center">
 
-        <div class="flex justify-center gap-4 mb-4">
-            <img src="./img/facebook-icon.png" alt="Facebook" class="w-10 h-10">
-            <img src="./img/google-icon.png" alt="Google" class="w-10 h-10">
-            <img src="./img/linkind-icon.png" alt="Linkedin" class="w-10 h-10">
+    <main class="w-full max-w-md p-8 text-center text-white">
+        <h1 class="text-4xl font-light mb-6">Criar Conta</h1>
+
+        <!-- colocando as imagens -->
+        <div class="flex justify-center gap-4 mb-4 ">
+            <img src="./img/facebook-icon.png" alt="Facebook" class="w-11 h-11">
+            <img src="./img/google-icon.png" alt="Google" class="w-11 h-11">
+            <img src="./img/linkind-icon.png" alt="Linkedin" class="w-11 h-11">
         </div>
-    </div>
+        
+        <p class="mb-6">ou cadastre seu email</p>
+
+        <div class="flex flex-col gap-4 items-center">
+            <input class="text-[#A0A0A0] w-60 py-1.5 px-2" type="text" placeholder="Nome">
+            <input class="text-[#A0A0A0] w-60 py-1.5 px-2" type="text" placeholder="Email">
+            <input class="text-[#A0A0A0] mb-6 w-60 py-1.5 px-2" type="text" placeholder="Senha">
+        </div>
+
+        <button class="border border-white rounded-full mb-6 py-2 px-3">Cadastrar</button>
+
+        <p class="text-1xl">Ja tem uma conta? <span class="font-bold">Login</span></p> 
+
+    </main>
+
+    <footer class="flex text-center mb--6 text-white">
+    
+    </footer>
+
 </body>
 </html>
